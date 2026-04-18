@@ -1,46 +1,52 @@
-# RAG Chatbot using OpenAI and Langchain
+# DocuRAG — AI-Powered Document Question Answering
 
-This chatbot will answer the question related to pdf that you upload.
+Ask anything about your PDF documents using natural language — powered by local AI (Ollama + LangChain + Streamlit). No cloud, no API costs, full privacy.
 
-## How to run the code locally
+---
 
-**Step 1:**
+## What it does
 
-Run the following command in the command prompt to initiate the git operations
+- Upload any PDF document
+- Ask questions in plain English
+- Get accurate answers based on the document content only
 
-```
-git init
-```
+---
 
-**Step 2:**
+## Tech Stack
 
-Run the following command in the command promt to clone this repository
+| Component | Technology |
+|---|---|
+| Web Framework | Streamlit |
+| LLM | qwen2.5:0.5b (via Ollama) |
+| Embeddings | granite-embedding:30m (via Ollama) |
+| Vector Store | FAISS |
+| RAG Pipeline | LangChain |
 
-```
-git clone https://github.com/VaibhavChavan049/RAG-Chatbot-using-Ollama-and-Langchain.git
-```
+---
 
-**Step 3:**
+## How to run locally
 
-Download Ollama using the following link:
-
-https://ollama.com/
-
-**Step 4:**
-
-Run the following commands in the command prompt to download the required embedding and llm
-```
-ollama run qwen2.5:0.5b
-```
-```
-ollama run granite-embedding:30m
+**Step 1 — Clone the repository**
+```bash
+git clone https://github.com/VaibhavChavan049/DocuRAG.git
+cd DocuRAG
 ```
 
-**Step 5:**
-
-Run the following command in the command prompt to run the chatbot app
-
-```
-streamlit run app.py
+**Step 2 — Install dependencies**
+```bash
+pip install -r requirements.txt
 ```
 
+**Step 3 — Install Ollama**
+
+Download and install from: https://ollama.com/
+
+**Step 4 — Pull required models**
+```bash
+ollama pull qwen2.5:0.5b
+ollama pull granite-embedding:30m
+```
+
+**Step 5 — Run the app**
+``````````````````````````````````````````````````` at:``````````````````````````````````````````````````` at:``````````````````````````````````````````````````` at:`````````````````````````````````````````````he ``ght``````````````k **Ask DocuRAG** to get your answer
+5. Click **Clear** to reset and ask a new question
