@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+__MACOSX/
+app.py.save

@@ -1,0 +1,9 @@
+langchain
+langchain_community
+langchain_ollama
+requests
+pypdf
+faiss-cpu
+tiktoken
+streamlit
+python-dotenv
