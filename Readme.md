@@ -1,6 +1,6 @@
 # DocuRAG : AI-Powered Document Question Answering
 
-Ask anything about your PDF documents using natural language — powered by local AI (Ollama + LangChain + Streamlit). No cloud, no API costs, full privacy.
+Ask anything about your PDF documents using natural language  powered by local AI (Ollama + LangChain + Streamlit). No cloud, no API costs, full privacy.
 
 ---
 
